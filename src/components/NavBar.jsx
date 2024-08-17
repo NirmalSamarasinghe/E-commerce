@@ -53,7 +53,7 @@ const NavBar = () => {
       <hr />
 
       {/* Category for larger screens */}
-      <div className="pt-4">
+      <div className="pt-2">
         <ul className="lg:flex items-center justify-between text-Black hidden">
           {navItem.map((item, index) => (
             <li key={index} className="hover:text-orange-500 my-3 cursor-pointer">
