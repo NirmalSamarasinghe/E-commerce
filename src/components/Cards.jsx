@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Cards = ({ filterItems }) => {
   return (
     <div className="grid  xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 grid-cols-1 justify-center shadow-sm">
-      {filterItems.map((item) => (
+      {filterItems.slice(0,8).map((item) => (
         <div key={item.id}>
           <Link to={`/shop/${item.id}`}>
             <img src={item.image}alt='' className="mx-auto w-full hover:scale-105 translate-all duration-300"/>
